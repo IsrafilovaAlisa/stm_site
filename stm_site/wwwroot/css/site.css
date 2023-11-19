@@ -16,3 +16,31 @@ html {
 body {
   margin-bottom: 60px;
 }
+
+Header-background {
+    background: linear-gradient(#00743F 90%, #28984700 10%) #00743F;
+    background-size: 240px;
+}
+
+li {
+    list-style: none
+}
+
+@font-face {
+    font-family: 'NotoSansLight';
+    src: url('/asset/fonts/NotoSans-Light.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'NotoSansSemiBold';
+    src: url('/asset/fonts/NotoSans-SemiBold.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'NotoSansRegular';
+    src: url('/asset/fonts/NotoSans-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
