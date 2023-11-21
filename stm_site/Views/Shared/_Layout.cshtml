@@ -9,23 +9,16 @@
     <link rel="stylesheet" href="~/css/text-styles.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/stm_site.styles.css" asp-append-version="true" />
 </head>
-<body>
-    @*<style>
-    .header-background {
-    background: #00743F;
-    }
-    </style>
-    <div class="clearfix">
-    <div class="container">
-    <div class="Header-background">
-    </div>
-    </div>
-    </div>
-    </div>
-    </div>*@
+<body class="home-page"style="margin-bottom: 0%;">
     <style>
         .header-background {
             background: #00743F;
+        }
+
+        .home-page {
+            background-color: #FFFFD626;
+            width: 100%;
+            height: 100%;
         }
 
         .top-menu {
@@ -62,6 +55,15 @@
             color: #FFFAD1;
         }
 
+        .footer-text {
+            font-size: 17px;
+            font-weight: 400;
+            line-height: 27px;
+            letter-spacing: 0.2em;
+            color: #FFFAD1;
+            height: 27px;
+            display: grid;
+        }
 
         .header-left-item {
             vertical-align: -webkit-baseline-middle;
@@ -81,6 +83,14 @@
             letter-spacing: 0.02em;
         }
 
+        .footer-style {
+            background-color: #1D65A6;
+            background-size: auto;
+        }
+
+        .footer {
+            height: 120px;
+        }
     </style>
     <header>
         <div class="container-fluid">
@@ -115,9 +125,6 @@
                             </span>
                         </p>
                     </div>
-                    @*<p class="text-menu-color-2">
-                    технического <br /> моделирования
-                    </p>*@
                 </div>
                 <div class="col-3">
                     <div>
@@ -165,17 +172,33 @@
             </nav>
         </div>
     </header>
-    <div class="container">
+    <div class="container-fluid">
         <main role="main" class="pb-3">
             @RenderBody()
         </main>
     </div>
 
-    @*<footer class="border-top footer text-muted">
-    <div class="container">
-    &copy; 2023 - stm_site - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-    </div>
-    </footer>*@
+
+    <footer class="footer footer-style" style="border-top: 3px solid #F2A104; position: relative">
+        <div class="container">
+            <div>
+                <p>
+                    <div style="margin-top: 17px; margin-left: -7.5%">
+                        <span class="footer-text " style="font-family: NotoSansSemiBold;">
+                            techmsys.ru
+                        </span>
+                    </div>
+
+                    <div style="margin-bottom: 42px; margin-left: -7.5%">
+                        <span class="footer-text" style="font-family: NotoSansRegular;">
+                            © ООО “Системы технологического моделирования”, 2024
+                        </span>
+                    </div>
+
+                </p>
+            </div>
+        </div>
+    </footer>
     <script src="~/lib/jquery/jquery.min.js"></script>
     <script src="~/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>

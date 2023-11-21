@@ -27,20 +27,20 @@ li {
 }
 
 @font-face {
-    font-family: 'NotoSansLight';
+    font-family: 'NotoSansLight'; /*300*/
     src: url('/asset/fonts/NotoSans-Light.ttf');
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
-    font-family: 'NotoSansSemiBold';
-    src: url('/asset/fonts/NotoSans-SemiBold.ttf');
+    font-family: 'NotoSansRegular'; /*400*/
+    src: url('/asset/fonts/NotoSans-Regular.ttf');
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
-    font-family: 'NotoSansRegular';
-    src: url('/asset/fonts/NotoSans-Regular.ttf');
+    font-family: 'NotoSansSemiBold'; /*600*/
+    src: url('/asset/fonts/NotoSans-SemiBold.ttf');
     font-weight: normal;
     font-style: normal;
 }

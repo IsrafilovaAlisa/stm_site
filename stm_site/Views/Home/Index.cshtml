@@ -1,8 +1,126 @@
 ﻿@{
     ViewData["Title"] = "";
 }
+<style>
+    .banner-large {
+        width: 1060px;
+        height: 578px;
+        display: block;
+    }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    .banner-middle {
+        width: 380px;
+        height: 556px;
+        display: block;
+    }
+
+    .banner-text-1 {
+        font-family: NotoSansLight;
+        font-size: 48px;
+        line-height: 65px;
+        letter-spacing: 0.05em;
+        text-align: left;
+        color: #192E5B;
+        height: 50px;
+    }
+
+    .banner-text-2 {
+        font-family: NotoSansRegular;
+        font-size: 32px;
+        font-weight: 400;
+        line-height: 44px;
+        text-align: left;
+        color: #192E5B;
+        margin: -2%;
+    }
+    .banner-text-3{
+        font-family: NotoSansLight;
+        font-size: 36px;
+        font-weight: 300;
+        line-height: 49px;
+        letter-spacing: 0.05em;
+        text-align: left;
+        color: #192E5B;
+    }
+    .banner-text-4{
+        font-family: NotoSansRegular;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 27px;
+        letter-spacing: 0.3em;
+        text-align: left;
+    }
+    .more{
+        font-family: NotoSansSemiBold;
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 27px;
+        letter-spacing: 0.02em;
+        text-align: center;
+        color: #192E5B;
+    }
+</style>
+
+
+<div>
+    <div>
+        <div class="row">
+            <div class="banner-middle col-4" style="background-image: url(/asset/images/banner-side-1.png);background-repeat:no-repeat;background-size:cover">
+            </div>
+
+            <div class="banner-large col-4 m-3" style="background-image: url(/asset/images/banner.png); background-repeat:no-repeat;background-size:cover; ">
+                <div>
+                    <p class="m-0 banner-text-1" style="line-height: 1;">СОВРЕМЕННАЯ</p>
+                    <p class="m-0 banner-text-2" style="letter-spacing: 0.3em; line-height: 1;">разработка</p>
+                    <p class="m-0 banner-text-2" style="line-height: 1;">программного обеспечения</p>
+                </div>
+            </div>
+
+            <div class="banner-middle col-4" style="background-image: url(/asset/images/banner-side-2.png);background-repeat:no-repeat;background-size:cover">
+            </div>
+        </div>
+    </div>
+    
+    <div>
+        <hr style="border: #f2a104 solid 2px; opacity: 0.5;" class="m-0" />
+    </div>
+
+    <div class="lower-img-menu m-2">
+        <div>
+            <div class="row">
+                <div class="col-4" style="height: 340px;">
+                    <div class="w-100 h-100 p-2" style="background-color: white; position:relative;">
+                        <img src="/asset/images/home-architecture.png" style="position:absolute; z-index:0; top:0px; right:0px; width:280px; height:255px; " />
+                        <div style="z-index:1; position:relative;">
+                            <p class="banner-text-3 m-0" style="line-height:1; height: 50px;">МОДЕЛИРОВАНИЕ</p>
+                            <p class="banner-text-4 m-0" style="line-height:1; height: 40px;">архитектурных</p>
+                            <p class="banner-text-4 m-0" style="line-height:1; height: 40px;">3D объектов</p>
+                        </div>
+                        <a href="Home/Index" class="more m-0" style="height: 25px; position: absolute; z-index:0; bottom:10px; right:0px;">Узнать подробнее>></a>
+                    </div>
+                </div>
+                <div class="col-4" style="height: 340px;">
+                    <div class="w-100 h-100 p-2" style="background-color: white; position: relative">
+                        <img src="" style="position:absolute; z-index:0; top:0px; right:0px; width:280px; height:255px; " />
+                        <div style="z-index:1; position:relative;">
+                            <p class="banner-text-3 m-0" style="line-height:1; height: 50px;">РАЗРАБОТКА</p>
+                            <p class="banner-text-4 m-0" style="line-height:1; height: 40px; letter-spacing: 0.3em;">промышленных</p>
+                            <p class="banner-text-4 m-0" style="line-height:1; height: 40px; letter-spacing: 0.3em;">тренажёров 3D и VR</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4" style="height: 340px;">
+                    <div class="w-100 h-100 p-2" style="background-color: white; position: relative">
+                        <img src="" style="position:absolute; z-index:0; top:0px; right:0px; width:280px; height:255px; " />
+                        <div style="z-index:1; position:relative;">
+                            <p class="banner-text-3 m-0" style="line-height:1; height: 50px;">СИСТЕМЫ</p>
+                            <p class="banner-text-4 m-0" style="line-height:1; height: 40px; letter-spacing: 0.3em;">диспетчеризации</p>
+                            <p class="banner-text-4 m-0" style="line-height:1; height: 40px; letter-spacing: 0.3em;">и мониторинга</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
+
