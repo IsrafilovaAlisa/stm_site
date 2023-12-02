@@ -26,21 +26,29 @@ li {
     list-style: none
 }
 
-@font-face {
-    font-family: 'NotoSansLight'; /*300*/
-    src: url('/asset/fonts/NotoSans-Light.ttf');
+/*@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;200;300;400;500;600&display=swap');*/
+
+/*@font-face {
+    font-family: 'NotoSansLight';*/ /*300*/
+    /*src: url('/asset/fonts/NotoSans-Light.ttf');
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
-    font-family: 'NotoSansRegular'; /*400*/
-    src: url('/asset/fonts/NotoSans-Regular.ttf');
+    font-family: 'NotoSansRegular';*/ /*400*/
+    /*src: url('/asset/fonts/NotoSans-Regular.ttf');
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
-    font-family: 'NotoSansSemiBold'; /*600*/
-    src: url('/asset/fonts/NotoSans-SemiBold.ttf');
+    font-family: 'NotoSansSemiBold';*/ /*600*/
+    /*src: url('/asset/fonts/NotoSans-SemiBold.ttf');
     font-weight: normal;
     font-style: normal;
 }
+@font-face {
+    font-family: 'NotoSansExtraLight';*/ /*200*/
+    /*src: url('/asset/fonts/NotoSans-ExtraLight.ttf');
+    font-weight: normal;
+    font-style: normal;
+}*/

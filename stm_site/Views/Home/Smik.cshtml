@@ -1,0 +1,215 @@
+﻿@{
+    ViewData["Title"] = "Smik";
+}
+
+<style>
+    .background-smik {
+        background-color: white;
+        height: 580px;
+        /*width: 1060px;*/
+        padding: 20px;
+    }
+
+    .banner-text {
+        font-family: Noto Sans;
+        font-size: 48px;
+        font-weight: 300;
+        line-height: 49px;
+        letter-spacing: 0.05em;
+        text-align: left;
+        color: #192E5B;
+        height: 50px;
+    }
+
+    .banner-text-2 {
+        font-family: Noto Sans;
+        font-size: 32px;
+        font-weight: 400;
+        line-height: 44px;
+        letter-spacing: 0.3em;
+        text-align: left;
+        color: #192E5B;
+        height: 40px;
+    }
+
+    .p-for-smik {
+        font-family: Noto Sans;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 22px;
+        letter-spacing: 0.02em;
+        text-align: left;
+    }
+
+    .padding-for-img div:not(:last-child) {
+        padding-right: 85px;
+    }
+
+    .banner-text-3 {
+        font-family: Noto Sans;
+        font-size: 36px;
+        font-weight: 300;
+        line-height: 49px;
+        letter-spacing: 0.05em;
+        text-align: left;
+        color: #192E5B;
+    }
+
+    .banner-text-4 {
+        font-family: Noto Sans;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 27px;
+        letter-spacing: 0.3em;
+        text-align: left;
+        color: #192E5B;
+    }
+
+    .margin-for-link{
+        margin-top: 2%;
+    }
+
+    .lh-for-a {
+        line-height: 2;
+    }
+</style>
+
+<div>
+    <div class="row justify-content-md-center ">
+        <div class="col-7 background-smik" style="position: relative;">
+            <div>
+                <p class="banner-text m-0">
+                    СМИК+
+                </p>
+                <p class="banner-text-2 m-0">
+                    программный комплекс для системы
+                </p>
+                <p class="banner-text-2 m-0">
+                    мобильных инспекций и контроля
+                </p>
+            </div>
+            <hr style="border: #F2A104 solid 1px; opacity: 1" />
+            <div class="p-for-smik">
+                <span>
+                    СМИК+ предназначен для автоматизации процессов визуального и измерительного контроля при обходе технологических <br />
+                    позиций с помощью современных информационно-технических решений, формирования базы данных по эксплуатации <br />
+                    оборудования, раннего определения его критического состояния, а также для контроля выполнения должностных<br />
+                    обязанностей оперативным персоналом. В СМИК+ применяются следующие технические решения: мобильное устройство <br />
+                    в форм-факторе смартфона совместно с виброметром ViPen (для сбора данных о вибрации и температуре), сеть интернет (LTE, <br />
+                    Wi-Fi), а также веб-интерфейс начальника смены и руководителей для назначения и контроля выполнения заданий.
+                </span>
+            </div>
+            <div class="row padding-for-img" style="margin-top: 20px">
+                <div class="col-auto">
+                    <img src="/asset/images/img-3.jpg" />
+                </div>
+                <div class="col-auto">
+                    <img src="/asset/images/img-2.jpg" />
+                </div>
+                <div class="col-auto">
+                    <img src="/asset/images/img-1.jpg" />
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <hr style="border: #F2A104 solid 1px; opacity: 1" />
+        </div>
+
+        <div class="row">
+            <div class="col-4" style="height: 340px;">
+                <div class="w-100 h-100 p-2" style="background-color: white; position:relative;">
+                    <img src="/asset/images/white-rect.png" style="position:absolute; z-index:0; top:0px; right:0px; width:280px; height:255px; " />
+                    <div style="z-index:1; position:relative; margin-top: 20px; margin-left: 20px">
+                        <p class="banner-text-3 m-0" style="line-height:1; height: 50px;">МОБИЛЬНОЕ ПРИЛОЖЕНИЕ</p>
+                        <p class="banner-text-4 m-0" style="line-height:1; height: 40px;">обходчика</p>
+                    </div>
+                    @*                    <a href="Home/Index" class="more m-0" style="height: 25px; position: absolute; z-index:0; bottom:10px; right:0px;">Узнать подробнее>></a>
+                    *@
+                </div>
+            </div>
+            <div class="col-4" style="height: 340px;">
+                <div class="w-100 h-100 p-2" style="background-color: white; position:relative;">
+                    <img src="/asset/images/white-rect.png" style="position:absolute; z-index:0; top:0px; right:0px; width:280px; height:255px; " />
+                    <div style="z-index:1; position:relative; margin-top: 20px; margin-left: 20px">
+                        <p class="banner-text-3 m-0" style="line-height:1; height: 50px;">WEB-ИНТЕРФЕЙС</p>
+                        <p class="banner-text-4 m-0" style="line-height:1; height: 40px;">руководителя</p>
+                    </div>
+                    @*                    <a href="Home/Index" class="more m-0" style="height: 25px; position: absolute; z-index:0; bottom:10px; right:0px;">Узнать подробнее>></a>
+                    *@
+                </div>
+            </div>
+            <div class="col-4" style="height: 340px;">
+                <div class="w-100 h-100 p-2" style="background-color: white; position:relative;">
+                    <img src="/asset/images/white-rect.png" style="position:absolute; z-index:0; top:0px; right:0px; width:280px; height:255px; " />
+                    <div style="z-index:1; position:relative; margin-top: 20px; margin-left: 20px">
+                        <p class="banner-text-3 m-0" style="line-height:1; height: 50px;">АДАПТАЦИЯ</p>
+                        <p class="banner-text-4 m-0" style="line-height:1; height: 40px;">под инфраструктуру</p>
+                        <p class="banner-text-4 m-0" style="line-height:1; height: 40px;">Заказчика</p>
+                    </div>
+                    @*                    <a href="Home/Index" class="more m-0" style="height: 25px; position: absolute; z-index:0; bottom:10px; right:0px;">Узнать подробнее>></a>
+                    *@
+                </div>
+            </div>
+
+        </div>
+        <div>
+            <hr style="border: #F2A104 solid 1px; opacity: 1" />
+        </div>
+
+        <div>
+            <div class="row justify-content-md-center">
+                <div class="col-7 background-smik" style="position: relative; height:820px">
+                    <div>
+                        <div>
+                            <p class="p-for-smik">
+                                Система позволяет проводить планирование и проведение ежедневных обходов с измерением температуры и вибрации <br />
+                                с автоматической передачей данных в систему c использованием сети интернет, вносить ручные записи и фотофиксацию <br />
+                                отклонений в работе оборудования, значений параметров. Сведения обходов передаются через Wi-Fi в онлайн режиме <br />
+                                на веб-интерфейс, расположенный на рабочем месте начальника смены с отображением информации по температуре, <br />
+                                вибрации и другим видам контроля оборудования (уровень масла, уровень в подогревателях, посторонний шум и т.д.). <br />
+                                Информация, полученная в результате обходов, позволяет формировать данные по группам, видам оборудования, <br />
+                                маршрутам, технологическим позициям. Предусмотрена автоматическая идентификация оборудования в Системе <br />
+                                посредством считывания мобильным устройством NFC-меток. Система использует любую доступную сеть интернет (Wi-Fi, <br />
+                                3G/LTE) для непрерывной передачи накопленных данных с мобильных устройств.
+                            </p>
+                            <p class="p-for-smik">
+                                СМИК+ может охватывать, к примеру, тепломеханическое, электротехническое и химическое оборудование в рамках <br />
+                                следующих технических систем: котлоагрегаты, турбоагрегаты, циркуляционные системы, оборудование технического <br />
+                                водоснабжения, блочные трансформаторы, трансформаторы собственных нужд, генераторы, распределительные <br />
+                                устройства собственных нужд, газопроводы, системы химводоподготовки, ёмкости, насосы, теплообменники, <br />
+                                подогреватели и прочие виды промышленного и производственного оборудования.
+                            </p>
+                        </div>
+                        <div>
+                            <div class="margin-for-link">
+                                <span class="p-for-smik" style="font-weight: 600;">Документация:</span>
+                                <p class="m-0 p-for-smik"><a class="lh-for-a" style="color: #1D65A6" href="/asset/documents/Руководство пользователя веб-приложения СМИК+.docx">Руководство пользователя веб-приложения</a></p>
+                                <p class="m-0 p-for-smik"><a class="lh-for-a" style="color: #1D65A6" href="/asset/documents/Руководство пользователя мобильного Android приложения СМИК+ v2.0.docx">Руководство пользователя мобильного Android приложения</a></p>
+                                <p class="m-0 p-for-smik"><a class="lh-for-a" style="color: #1D65A6" href="/asset/documents/Руководство системного администратора СМИК+.docx">Руководство системного администратора</a></p>
+                                <p class="m-0 p-for-smik"><a class="lh-for-a" style="color: #1D65A6" href="/asset/documents/Руководство по поддержанию жизненного цикла программного комплекса СМИК+.pdf">Руководство по поддержанию жизненного цикла программного комплекса</a></p>
+                                <p class="m-0 p-for-smik"><a class="lh-for-a" style="color: #1D65A6" href="/asset/documents/Описание функциональных характеристик СМИК+.pdf">Описание функциональных характеристик</a></p>
+                            </div>
+                            <div class="margin-for-link">
+                                <span class="p-for-smik" style="font-weight: 600;">Свидетельства и сертификаты:</span>
+                                <p class="m-0 p-for-smik"><a class="lh-for-a" style="color: #1D65A6" href="/asset/documents/СМИК+_свидетельство о госрегистрации ПО для ЭВМ.pdf">СМИК+_свидетельство о госрегистрации ПО для ЭВМ</a></p>
+                            </div>
+                            <div class="margin-for-link">
+                                <span class="p-for-smik" style="font-weight: 600;">Информация о стоимости:</span>
+                                <p class="m-0 p-for-smik"><a class="lh-for-a" style="color: #1D65A6" href="/asset/documents/СМИК+_свидетельство о госрегистрации ПО для ЭВМ.pdf">СМИК+_свидетельство о госрегистрации ПО для ЭВМ</a></p>
+                            </div>
+                            <div class="margin-for-link">
+                                <span class="p-for-smik" style="font-weight: 600;">Загрузки:</span>
+                                <p class="m-0 p-for-smik"><a class="lh-for-a" style="color: #1D65A6" href="/asset/documents/Руководство по поддержанию жизненного цикла программного комплекса СМИК+.pdf">Программный комплекс СМИК+</a></p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
+</div>

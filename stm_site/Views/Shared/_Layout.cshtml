@@ -1,5 +1,5 @@
 ﻿<!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="h-100">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,48 +8,62 @@
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/css/text-styles.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/stm_site.styles.css" asp-append-version="true" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;200;300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="icon" href="/asset/images/icon.png" sizes="32x32" type="image/png">
 </head>
-<body class="home-page"style="margin-bottom: 0%;">
+<body class="home-page d-flex flex-column h-100" style="margin-bottom: 0%;">
     <style>
+        header{
+            position: fixed;
+            top: 0;
+            left:auto;
+            width: 100%;
+            z-index: 999;
+        }
         .header-background {
             background: #00743F;
         }
 
         .home-page {
             background-color: #FFFFD626;
-            width: 100%;
-            height: 100%;
+            /*width: 100%;
+                    height: 100%;*/
         }
 
         .top-menu {
-            height: 105px;
+            height: 105px;/*
             background: -webkit-linear-gradient(180deg, #00743F 78.12%, rgba(40, 152, 71, 0) 100%);
-            background: linear-gradient(180deg, #00743F 78.12%, rgba(40, 152, 71, 0) 100%);
+            background: linear-gradient(180deg, #00743F 78.12%, rgba(40, 152, 71, 0) 100%);*/
+            background: linear-gradient(180deg, #00743F 78.12%, white);
         }
 
         .bottom-menu {
-            height: 55px;
-            background: -webkit-linear-gradient(0deg, rgba(29, 101, 166, 0.8) 66.67%, rgba(72, 200, 192, 0) 100%);
-            background: linear-gradient(0deg, rgba(29, 101, 166, 0.8) 66.67%, rgba(72, 200, 192, 0) 100%);
+            height: 55px;/*
+            background: -webkit-linear-gradient(0deg, rgba(29, 101, 166, 0.8) 66.67%, rgba(72, 200, 192, 0) 100%);*/
+            background: linear-gradient(0deg, rgba(29, 101, 166, 0.8) 66.67%, white);
         }
 
         .text-menu {
             display: block;
-            font-family: NotoSansSemiBold;
+            font-family: Noto Sans;
+            font-weight: 600;
             font-size: 20px;
             letter-spacing: 0.1em;
             color: white;
-            margin-top: 2%;
         }
 
         .text-menu-color {
-            font-family: NotoSansSemiBold;
+            font-family: Noto Sans;
+            font-weight: 600;
             font-size: 20px;
             color: #FFFAD1;
         }
 
         .text-menu-color-2 {
-            font-family: NotoSansSemiBold;
+            font-family: Noto Sans;
+            font-weight: 600;
             font-size: 20px;
             line-height: 27px;
             color: #FFFAD1;
@@ -91,8 +105,104 @@
         .footer {
             height: 120px;
         }
+
+        .content-dropdown-style {
+            background-color: white;
+            border: wheat solid 2px;
+            border-radius: 0px;
+            padding: 0px;
+        }
+
+        .top-menu-a-style {
+            height: 54px;
+        }
+
+        .content-dropdown-style li a {
+            width: 284px;
+            white-space: break-spaces;
+            font-family: Noto Sans;
+            font-size: 16px;
+            font-weight: 200;
+            line-height: 22px;
+            letter-spacing: 0.1em;
+            color: #000000;
+            max-height: 100px;
+            min-height: 60px;
+            display: grid;
+        }
+
+        .top-menu-item div a {
+            padding-right: calc(var(--bs-gutter-x) * .5);
+            padding-left: calc(var(--bs-gutter-x) * .5);
+        }
+
+            .top-menu-item div a.show {
+                background: -webkit-linear-gradient(0deg, #1D65A6 66.67%, rgba(72, 200, 192, 0) 100%);
+                background: linear-gradient(0deg, #1D65A6 66.67%, rgba(72, 200, 192, 0) 100%);
+            }
+
+        a.nav-link {
+            display: grid;
+        }
+
+        a span {
+            align-self: center;
+        }
+
+        .content-dropdown-style li:not(:last-child) {
+            border-bottom: wheat solid 1px;
+        }
+
+        .content-dropdown-style li a:hover {
+            font-family: Noto Sans;
+            font-weight: 400;
+            color: #FFF;
+            background-color: #72A2C0;
+        }
+
+        .top-menu-item {
+            position: relative;
+        }
+
+            .top-menu-item:before {
+                content: '';
+                height: 38px;
+                border-right: solid 2px #72A2C0;
+                z-index: 1;
+                position: absolute;
+                bottom: 0px;
+                left: 0px;
+                right: 0px;
+            }
+
+        ul li.top-menu-item:first-child:before {
+            border-left: solid 2px #72A2C0;
+        }
+
+        .link-menu-span{
+            width: 210px;
+            text-align: center;
+            line-height: 3;
+            margin-left: -4%;
+        }
+
+        .link-menu-span-first-and-last-el{
+            width: 210px;
+            text-align: center;
+            line-height: 3;
+            margin-left: -5%;
+        }
+
+        .dropdown-width{
+            width: 210px;
+        }
+
+        /*.dropdown-item.active, .dropdown-item:active {
+                    background-color: green;
+                }
+
     </style>
-    <header>
+    <header class="bg-white">
         <div class="container-fluid">
             <div class="row justify-content-between top-menu">
                 <div class="col-4 ">
@@ -143,28 +253,75 @@
                 </div>
             </div>
 
-            <nav class="row navbar navbar-expand-sm navbar-toggleable-sm navbar-light border-bottom box-shadow mb-3 bottom-menu">
+            <nav class="row navbar navbar-expand-sm navbar-toggleable-sm navbar-light border-bottom box-shadow p-0 bottom-menu">
                 <div class="container-fluid justify-content-center">
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                             aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
-                    <div class="text-menu">
-                        <ul class="flex-grow-1 row row-cols-auto">
-                            <li class="nav-item">
-                                <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Index">Деятельность >></a>
+                    <div class="text-menu" style="width: 1058px;">
+                        <ul class="flex-grow-1 row row-cols-auto mb-0">
+                            <li class="nav-item form-group p-0 top-menu-item">
+                                <div class="dropdown dropdown-width">
+                                    <a class="nav-link top-menu-a-style top-menu-item " href="#" role="button" id="dropdownActivity" data-bs-toggle="dropdown" aria-expanded="false"><span class="link-menu-span-first-and-last-el">Деятельность >></span></a>
+
+                                    <ul class="content-dropdown-style dropdown-menu m-0" aria-labelledby="dropdownActivity">
+                                        <li><a class="dropdown-item" href="#"><span>Разработка программного обеспечения</span></a></li>
+                                        <li><a class="dropdown-item" href="#"><span>Тренажёры 3D & VR</span></a></li>
+                                        <li><a class="dropdown-item" href="#"><span>Системы мониторинга и диспетчеризации</span></a></li>
+                                        <li><a class="dropdown-item" href="#"><span>Техническая поддержка</span></a></li>
+                                        <li><a class="dropdown-item" href="#"><span>Аутсорсинг</span></a></li>
+                                        <li><a class="dropdown-item" href="#"><span>Архитектура 3D</span></a></li>
+                                    </ul>
+                                </div>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Privacy">Продукты >></a>
+                            <li class="nav-item form-group p-0 top-menu-item">
+                                <div class="dropdown dropdown-width">
+                                    <a class="nav-link top-menu-a-style top-menu-item" href="#" role="button" id="dropdownProducts" data-bs-toggle="dropdown" aria-expanded="false"><span class="link-menu-span" >Продукты >></span></a>
+                                    <ul class="dropdown-menu content-dropdown-style m-0" aria-labelledby="dropdownProducts">
+                                        <li><a class="dropdown-item" href="#"><span>Тренажёры 3D</span></a></li>
+                                        <li><a class="dropdown-item" href="#"><span>Тренажёры VR</span></a></li>
+                                        <li><a class="dropdown-item" href="#"><span>СМИК+</span></a></li>
+                                        <li><a class="dropdown-item" href="#"><span>Архитектура 3D</span></a></li>
+                                    </ul>
+                                </div>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Privacy">Кейсы >></a>
+                            <li class="nav-item form-group p-0 top-menu-item">
+                                <div class="dropdown dropdown-width">
+                                    <a class="nav-link top-menu-a-style top-menu-item " href="#" role="button" id="dropdownCases" data-bs-toggle="dropdown" aria-expanded="false"><span class="link-menu-span" >Кейсы >></span></a>
+                                    <ul class="dropdown-menu content-dropdown-style m-0" aria-labelledby="dropdownCases">
+                                        <li><a class="dropdown-item" href="#"><span>Тренажёры 3D</span></a></li>
+                                        <li><a class="dropdown-item" href="#"><span>Тренажёры VR</span></a></li>
+                                        <li><a class="dropdown-item" href="#"><span>Архитектура 3D</span></a></li>
+                                        <li><a class="dropdown-item" href="#"><span>Аутсорсинг</span></a></li>
+                                        <li><a class="dropdown-item" href="#"><span>Система сбора данных</span></a></li>
+                                    </ul>
+                                </div>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Privacy">Новости >></a>
+
+                            <li class="nav-item form-group p-0 top-menu-item">
+                                <div class="dropdown dropdown-width">
+                                    <a class="nav-link top-menu-a-style top-menu-item" href="#" role="button" id="dropdownCases" data-bs-toggle="dropdown" aria-expanded="false"><span class="link-menu-span" >Новости >></span></a>
+                                    <ul class="dropdown-menu content-dropdown-style m-0" aria-labelledby="dropdownCases">
+                                        <li><a class="dropdown-item" href="#"><span></span></a></li>
+                                        <li><a class="dropdown-item" href="#"><span></span></a></li>
+                                        <li><a class="dropdown-item" href="#"><span></span></a></li>
+                                        <li><a class="dropdown-item" href="#"><span></span></a></li>
+                                        <li><a class="dropdown-item" href="#"><span></span></a></li>
+                                    </ul>
+                                </div>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Privacy">О компании >></a>
+                            <li class="nav-item form-group p-0 top-menu-item">
+                                <div class="dropdown dropdown-width">
+                                    <a class="nav-link top-menu-a-style top-menu-item" href="#" role="button" id="dropdownCompany" data-bs-toggle="dropdown" aria-expanded="false"><span class="link-menu-span-first-and-last-el">О компании >></span></a>
+                                    <ul class="dropdown-menu content-dropdown-style m-0" aria-labelledby="dropdownCompany">
+                                        <li><a class="dropdown-item" href="#"><span></span></a></li>
+                                        <li><a class="dropdown-item" href="#"><span></span></a></li>
+                                        <li><a class="dropdown-item" href="#"><span></span></a></li>
+                                        <li><a class="dropdown-item" href="#"><span></span></a></li>
+                                        <li><a class="dropdown-item" href="#"><span></span></a></li>
+                                    </ul>
+                                </div>
                             </li>
                         </ul>
                     </div>
@@ -172,25 +329,25 @@
             </nav>
         </div>
     </header>
-    <div class="container-fluid">
-        <main role="main" class="pb-3">
+    <div class="container-fluid ">
+        <main role="main" class="pb-3 pt-3" style="margin-top: 160px;">
             @RenderBody()
         </main>
     </div>
 
 
-    <footer class="footer footer-style" style="border-top: 3px solid #F2A104; position: relative">
+    <footer class="footer footer-style mt-auto py-3" style="border-top: 3px solid #F2A104; position: relative">
         <div class="container">
             <div>
                 <p>
                     <div style="margin-top: 17px; margin-left: -7.5%">
-                        <span class="footer-text " style="font-family: NotoSansSemiBold;">
+                        <span class="footer-text " style="font-family: Noto Sans; font-weight:600">
                             techmsys.ru
                         </span>
                     </div>
 
                     <div style="margin-bottom: 42px; margin-left: -7.5%">
-                        <span class="footer-text" style="font-family: NotoSansRegular;">
+                        <span class="footer-text" style="font-family: Noto Sans; font-weight:400">
                             © ООО “Системы технологического моделирования”, 2024
                         </span>
                     </div>
