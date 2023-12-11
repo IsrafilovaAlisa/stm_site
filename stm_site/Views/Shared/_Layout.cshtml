@@ -15,13 +15,14 @@
 </head>
 <body class="home-page d-flex flex-column h-100" style="margin-bottom: 0%;">
     <style>
-        header{
+        header {
             position: fixed;
             top: 0;
-            left:auto;
+            left: auto;
             width: 100%;
             z-index: 999;
         }
+
         .header-background {
             background: #00743F;
         }
@@ -29,19 +30,19 @@
         .home-page {
             background-color: #FFFFD626;
             /*width: 100%;
-                    height: 100%;*/
+                            height: 100%;*/
         }
 
         .top-menu {
-            height: 105px;/*
-            background: -webkit-linear-gradient(180deg, #00743F 78.12%, rgba(40, 152, 71, 0) 100%);
-            background: linear-gradient(180deg, #00743F 78.12%, rgba(40, 152, 71, 0) 100%);*/
+            height: 105px;
+            /*background: -webkit-linear-gradient(180deg, #00743F 78.12%, rgba(40, 152, 71, 0) 100%);
+                    background: linear-gradient(180deg, #00743F 78.12%, rgba(40, 152, 71, 0) 100%);*/
             background: linear-gradient(180deg, #00743F 78.12%, white);
         }
 
         .bottom-menu {
-            height: 55px;/*
-            background: -webkit-linear-gradient(0deg, rgba(29, 101, 166, 0.8) 66.67%, rgba(72, 200, 192, 0) 100%);*/
+            height: 55px;
+            /*background: -webkit-linear-gradient(0deg, rgba(29, 101, 166, 0.8) 66.67%, rgba(72, 200, 192, 0) 100%);*/
             background: linear-gradient(0deg, rgba(29, 101, 166, 0.8) 66.67%, white);
         }
 
@@ -56,17 +57,17 @@
 
         .text-menu-color {
             font-family: Noto Sans;
-            font-weight: 600;
+            font-weight: 400;
             font-size: 20px;
-            color: #FFFAD1;
+            color: white;
         }
 
         .text-menu-color-2 {
             font-family: Noto Sans;
-            font-weight: 600;
+            font-weight: 400;
             font-size: 20px;
             line-height: 27px;
-            color: #FFFAD1;
+            color: white;
         }
 
         .footer-text {
@@ -179,27 +180,31 @@
             border-left: solid 2px #72A2C0;
         }
 
-        .link-menu-span{
+        .link-menu-span {
             width: 210px;
             text-align: center;
             line-height: 3;
             margin-left: -4%;
+            font-family: Noto Sans;
+            font-weight: 300;
         }
 
-        .link-menu-span-first-and-last-el{
+        .link-menu-span-first-and-last-el {
             width: 210px;
             text-align: center;
             line-height: 3;
             margin-left: -5%;
+            font-family: Noto Sans;
+            font-weight: 300;
         }
 
-        .dropdown-width{
+        .dropdown-width {
             width: 210px;
         }
 
         /*.dropdown-item.active, .dropdown-item:active {
-                    background-color: green;
-                }
+                            background-color: green;
+                        }
 
     </style>
     <header class="bg-white">
@@ -208,21 +213,22 @@
                 <div class="col-4 ">
                     <div class="d-inline-block header-left-item" style="margin-left:100px">
                         <svg width="126" height="126" viewBox="0 0 126 126" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="63" cy="63" r="46" fill="#FFFFD6" />
-                            <circle cx="62.9325" cy="62.9325" r="44.5" transform="rotate(-45 62.9325 62.9325)" fill="url(#paint0_linear_27_22)" />
-                            <circle cx="62.9325" cy="62.9325" r="44.5" transform="rotate(-135 62.9325 62.9325)" fill="url(#paint1_linear_27_22)" />
-                            <path d="M46.4325 39.4325L47.9325 38.4325L49.9325 37.4325L51.4325 36.9325L53.9325 36.4325H54.9325V87.4325L55.4325 87.9325L56.4325 88.4325L58.4325 88.9325H59.9325H61.9325H63.9325H65.4325L67.4325 88.4325L68.4325 87.9325L68.9325 87.4325V36.5745H69.9325L72.4325 36.9325L73.9325 37.4325L75.9325 38.4325L77.4325 39.4325L78.9325 40.4325L80.4325 41.4325L80.9325 41.9325L81.4325 42.4325H81.9325L94.4325 31.4325L96.4325 33.4325L97.9325 35.4325L74.9325 54.4325V72.4325L91.4325 59.4325L91.9325 60.9325V62.9325V66.9325L91.4325 69.9325L90.9325 72.4325L90.4325 74.4325L89.4325 76.9325L87.9325 79.4325L99.4325 88.4325L97.4325 91.4325L94.9325 93.9325L83.9325 84.9325L81.9325 86.9325L79.9325 88.4325L78.4325 89.4325L74.9325 91.4325L70.9325 92.9325L68.9325 93.4325L65.9325 93.9325H61.9325H57.9325L54.9325 93.4325L52.9325 92.9325L48.9325 91.4325L45.4325 89.4325L43.9325 88.4325L41.9325 86.9325L39.9325 84.9325L37.9325 82.4325L35.4325 78.9325L34.4325 76.9325L33.9325 75.4325L32.9325 72.4325L32.4325 69.9325L31.9325 66.9325V62.9325V60.9325L32.4325 59.4325L48.9325 72.4325V54.4325L26.9325 36.4325L30.4325 32.4325L41.9325 42.4325H42.4325L42.9325 41.9325L43.4325 41.4325L44.9325 40.4325L46.4325 39.4325Z" fill="#FFFFD6" />
+                            <circle cx="63" cy="63" r="46" fill="white" />
+                            <circle cx="62.9325" cy="62.9325" r="44.5" transform="rotate(-45 62.9325 62.9325)" fill="url(#paint0_linear_108_65)" />
+                            <circle cx="62.9325" cy="62.9325" r="44.5" transform="rotate(-135 62.9325 62.9325)" fill="url(#paint1_linear_108_65)" />
+                            <path d="M46.4325 39.4325L47.9325 38.4325L49.9325 37.4325L51.4325 36.9325L53.9325 36.4325H54.9325V87.4325L55.4325 87.9325L56.4325 88.4325L58.4325 88.9325H59.9325H61.9325H63.9325H65.4325L67.4325 88.4325L68.4325 87.9325L68.9325 87.4325V36.5745H69.9325L72.4325 36.9325L73.9325 37.4325L75.9325 38.4325L77.4325 39.4325L78.9325 40.4325L80.4325 41.4325L80.9325 41.9325L81.4325 42.4325H81.9325L94.4325 31.4325L96.4325 33.4325L97.9325 35.4325L74.9325 54.4325V72.4325L91.4325 59.4325L91.9325 60.9325V62.9325V66.9325L91.4325 69.9325L90.9325 72.4325L90.4325 74.4325L89.4325 76.9325L87.9325 79.4325L99.4325 88.4325L97.4325 91.4325L94.9325 93.9325L83.9325 84.9325L81.9325 86.9325L79.9325 88.4325L78.4325 89.4325L74.9325 91.4325L70.9325 92.9325L68.9325 93.4325L65.9325 93.9325H61.9325H57.9325L54.9325 93.4325L52.9325 92.9325L48.9325 91.4325L45.4325 89.4325L43.9325 88.4325L41.9325 86.9325L39.9325 84.9325L37.9325 82.4325L35.4325 78.9325L34.4325 76.9325L33.9325 75.4325L32.9325 72.4325L32.4325 69.9325L31.9325 66.9325V62.9325V60.9325L32.4325 59.4325L48.9325 72.4325V54.4325L26.9325 36.4325L30.4325 32.4325L41.9325 42.4325H42.4325L42.9325 41.9325L43.4325 41.4325L44.9325 40.4325L46.4325 39.4325Z" fill="white" />
                             <defs>
-                                <linearGradient id="paint0_linear_27_22" x1="62.9325" y1="18.4325" x2="62.9325" y2="107.433" gradientUnits="userSpaceOnUse">
+                                <linearGradient id="paint0_linear_108_65" x1="62.9325" y1="18.4325" x2="62.9325" y2="107.433" gradientUnits="userSpaceOnUse">
                                     <stop offset="0.9999" stop-color="#192E5B" />
                                     <stop offset="1" stop-color="#192E5B" stop-opacity="0" />
                                 </linearGradient>
-                                <linearGradient id="paint1_linear_27_22" x1="62.9325" y1="18.4325" x2="62.9325" y2="107.433" gradientUnits="userSpaceOnUse">
+                                <linearGradient id="paint1_linear_108_65" x1="62.9325" y1="18.4325" x2="62.9325" y2="107.433" gradientUnits="userSpaceOnUse">
                                     <stop offset="0.307292" stop-color="#1D65A6" />
                                     <stop offset="0.848958" stop-color="#192E5B" stop-opacity="0" />
                                 </linearGradient>
                             </defs>
                         </svg>
+
                     </div>
                     <div class="d-inline-block header-left-item">
                         <p class="text-center" style="margin:0px; text-align:left">
@@ -245,7 +251,7 @@
                             <span class="text-menu-color-2 spacing-2">
                                 +7 917 43 18 638
                             </span>
-                            <a class="text-menu-color-2 spacing-11" style="color: #FFFAD1;" href="mailto:info@techmsys.ru">
+                            <a class="text-menu-color-2 spacing-11" href="mailto:info@techmsys.ru">
                                 info@techmsys.ru
                             </a>
                         </p>
@@ -263,7 +269,7 @@
                         <ul class="flex-grow-1 row row-cols-auto mb-0">
                             <li class="nav-item form-group p-0 top-menu-item">
                                 <div class="dropdown dropdown-width">
-                                    <a class="nav-link top-menu-a-style top-menu-item " href="#" role="button" id="dropdownActivity" data-bs-toggle="dropdown" aria-expanded="false"><span class="link-menu-span-first-and-last-el">Деятельность >></span></a>
+                                    <a class="nav-link top-menu-a-style top-menu-item " href="#" role="button" id="dropdownActivity" data-bs-toggle="dropdown" aria-expanded="false"><span class="link-menu-span-first-and-last-el">Деятельность</span></a>
 
                                     <ul class="content-dropdown-style dropdown-menu m-0" aria-labelledby="dropdownActivity">
                                         <li><a class="dropdown-item" href="#"><span>Разработка программного обеспечения</span></a></li>
@@ -277,7 +283,7 @@
                             </li>
                             <li class="nav-item form-group p-0 top-menu-item">
                                 <div class="dropdown dropdown-width">
-                                    <a class="nav-link top-menu-a-style top-menu-item" href="#" role="button" id="dropdownProducts" data-bs-toggle="dropdown" aria-expanded="false"><span class="link-menu-span" >Продукты >></span></a>
+                                    <a class="nav-link top-menu-a-style top-menu-item" href="#" role="button" id="dropdownProducts" data-bs-toggle="dropdown" aria-expanded="false"><span class="link-menu-span">Продукты</span></a>
                                     <ul class="dropdown-menu content-dropdown-style m-0" aria-labelledby="dropdownProducts">
                                         <li><a class="dropdown-item" href="#"><span>Тренажёры 3D</span></a></li>
                                         <li><a class="dropdown-item" href="#"><span>Тренажёры VR</span></a></li>
@@ -288,7 +294,7 @@
                             </li>
                             <li class="nav-item form-group p-0 top-menu-item">
                                 <div class="dropdown dropdown-width">
-                                    <a class="nav-link top-menu-a-style top-menu-item " href="#" role="button" id="dropdownCases" data-bs-toggle="dropdown" aria-expanded="false"><span class="link-menu-span" >Кейсы >></span></a>
+                                    <a class="nav-link top-menu-a-style top-menu-item " href="#" role="button" id="dropdownCases" data-bs-toggle="dropdown" aria-expanded="false"><span class="link-menu-span">Кейсы</span></a>
                                     <ul class="dropdown-menu content-dropdown-style m-0" aria-labelledby="dropdownCases">
                                         <li><a class="dropdown-item" href="#"><span>Тренажёры 3D</span></a></li>
                                         <li><a class="dropdown-item" href="#"><span>Тренажёры VR</span></a></li>
@@ -301,7 +307,7 @@
 
                             <li class="nav-item form-group p-0 top-menu-item">
                                 <div class="dropdown dropdown-width">
-                                    <a class="nav-link top-menu-a-style top-menu-item" href="#" role="button" id="dropdownCases" data-bs-toggle="dropdown" aria-expanded="false"><span class="link-menu-span" >Новости >></span></a>
+                                    <a class="nav-link top-menu-a-style top-menu-item" href="#" role="button" id="dropdownCases" data-bs-toggle="dropdown" aria-expanded="false"><span class="link-menu-span">Новости</span></a>
                                     <ul class="dropdown-menu content-dropdown-style m-0" aria-labelledby="dropdownCases">
                                         <li><a class="dropdown-item" href="#"><span></span></a></li>
                                         <li><a class="dropdown-item" href="#"><span></span></a></li>
@@ -313,7 +319,7 @@
                             </li>
                             <li class="nav-item form-group p-0 top-menu-item">
                                 <div class="dropdown dropdown-width">
-                                    <a class="nav-link top-menu-a-style top-menu-item" href="#" role="button" id="dropdownCompany" data-bs-toggle="dropdown" aria-expanded="false"><span class="link-menu-span-first-and-last-el">О компании >></span></a>
+                                    <a class="nav-link top-menu-a-style top-menu-item" href="#" role="button" id="dropdownCompany" data-bs-toggle="dropdown" aria-expanded="false"><span class="link-menu-span-first-and-last-el">О компании</span></a>
                                     <ul class="dropdown-menu content-dropdown-style m-0" aria-labelledby="dropdownCompany">
                                         <li><a class="dropdown-item" href="#"><span></span></a></li>
                                         <li><a class="dropdown-item" href="#"><span></span></a></li>
